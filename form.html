@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <h1>입력양식 테스트</h1>
+
+    <form action="results.html" method="GET">
+        <fieldset>
+            <legend>Login</legend>
+
+
+
+            <div>
+                <label for="username">Username</label> <br>
+                <input type="text" name="username" id="username" required size="40">
+            </div>
+
+            <div>
+                <label for="password">Password</label><br>
+                <input type="password" name="password" id="password" required size="40">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Personal Info</legend>
+
+
+            <div>
+                <label for="email">이메일</label> <br>
+                <input type="email" name="email" id="email" required size="40">
+            </div>
+
+
+            <div>
+
+                <label for="age">나이</label> <br>
+                <input type="number" name="age" id="age" min="0" max="150" step="1">
+
+            </div>
+
+            <div>
+                <label for="birth">생일</label> <br>
+                <input type="date" name="birth" id="date">
+            </div>
+
+            <div>
+                <label for="number">전화번호</label> <br>
+                <input type="tel" name="number" id="number" placeholder="전화번호를 입력하세요. ">
+            </div>
+            <div>
+                <label for="homepage">홈페이지</label> <br>
+                <input type="url" name="homepage" id="homepage"
+                    value="https://finance.yahoo.com/quote/AMC/community?p=AMC">
+            </div>
+            <div>
+                <label for="bio">이력사항</label><br>
+                <textarea name="bio" id="bio" cols="40" rows="4" placeholder="당신의 이력사항을 입력하세요..."></textarea>
+            </div>
+
+        </fieldset>
+<fieldset>
+    <legend>당신의 선택은?</legend>
+
+        <div>
+
+            <label for="">좋아하는 과일은?</label>
+            <div>
+                <input type="checkbox" name="banana" id="banana" checked>
+                <label for="banana">바나나</label>
+                <input type="checkbox" name="apple" id="apple">
+                <label for="apple">사과</label>
+                <input type="checkbox" name="orange" id="orange">
+                <label for="orange">오렌지</label>
+                <input type="checkbox" name="strawberry" id="strawberry">
+                <label for="strawberry">딸기</label>
+            </div>
+        </div>
+        <div>
+            <label for="">성별</label>
+            <div>
+                <label for="male">남성</label>
+                <input type="radio" name="Gender" id="male" value="male">
+                <label for="female">여성</label>
+                <input type="radio" name="Gender" id="female" value="female">
+            </div>
+        </div>
+        <div>
+            <label for="menu">저녁식사 메뉴는?</label>
+            <select name="menu" id="menu">
+                <option value="짜장면">짜장면</option>
+                <option value="짬뽕">짬뽕</option>
+                <option value="잡채밥">잡채밥</option>
+                <option value="탕수육" selected>탕수육</option >
+            </select>
+        </div>
+        <div>
+            <label for="file">첨부파일</label>
+            <input type="file" name="file" id="file">
+        </div>
+        <div>
+            <label for="color">좋아하는 색깔은?</label>
+            <input type="color" name="color" id="color">
+        </div>
+        <div>
+            <label for="search">검색</label>
+            <input type="search" name="search" id="search">
+        </div>
+        <div>
+            <label for="range">몇개를 구입하시겠습니까?</label>
+            <input type="range" name="range" id="range" min="0" max="10" value="4" step="2">
+        </div>
+        <div>
+            <label for="time">약속시간은?</label>
+            <input type="time" name="time" id="time">
+        </div>
+    </fieldset> 
+        <br>
+        <button type="submit">제출</button>
+        <button type="reset">취소</button>
+<!-- 
+        <button>버튼1</button>
+        <input type="button" value="버튼2"> -->
+
+    </form>
+</body>
+
+</html>

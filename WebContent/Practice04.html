@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>이클래스 로그인</title>
+<style>
+input.login {
+	background-color : #FFFF99;
+}
+table {
+	width : 700px;
+	
+}
+</style>
+</head>
+<body onLoad = "alert('어서오세요'); frm1.id.focus()">
+<div align = "center">
+	<img src = image/eclass_title.jpg>
+	<br>
+	<h2><strong>로그인</strong></h2>
+	<hr>
+	<form name = "frm1">
+	<table>
+		<tr>
+			<td rowspan = "5"><input type = image src = "image/eclass_logo.png"></td>
+			<td colspan = "2"><strong>회원님의 아이디와 비밀번호를 정확히 입력하세요.</strong></td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>
+			<select name = "type">
+				<option value = "1" selected>학부생</option>
+				<option value = "2">대학원생</option>
+				<option value = "3">교직원</option>
+			</select>
+			</td>
+		</tr>
+		<tr>
+			<td>아이디</td>
+			<td><input type = text name = "id" class = login></td>
+		</tr>
+		<tr>
+			<td>비밀번호</td>
+			<td><input type = password name = "pwd" class = login></td>
+		</tr>
+		<tr>
+			<td colspan = "2">
+			<input type = submit value = "로그인">
+			<input type = button value = "가입하기" onclick = "alert('회원이 아니군요')" >
+			</td>
+		</tr>
+	</table>
+	</form>
+</div>
+</body>	
+</html>
+

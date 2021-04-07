@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>a앵커만들기</title>
+<script src="jquery-3.4.1.min.js"></script>
+<script src="jquery.scrollTo.min.js"></script>
+    <style>
+        /* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+
+
+/* 스무드 스크롤 인터넷 익스플로러에서 사용 불가능
+속도조절 불가능
+html{
+    scroll-behavior: smooth;
+} */
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header a{
+    background-color: teal;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 20px;
+
+}
+p{
+    font-size: 1.5em;
+    line-height: 2em;
+}
+
+.btn-gototop{
+    background-color:pink;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="#part1">html part</a>
+            <a href="#part2">css part</a>
+            <a href="#part3">jquery part</a>
+            <a href="#part4">portfolio part</a>
+        </header>
+
+        <h1 id="part1">
+            html part  
+        </h1>
+        <hr>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores deleniti quae ea velit nesciunt, in dolorem perspiciatis, blanditiis maxime optio ipsa, fuga quidem et dolores assumenda explicabo voluptatum dolorum esse.
+        </p>
+        <a href="#" class="btn-gototop">Go to top</a>
+        
+        <h1 id="part2">
+            css part  
+        </h1>
+        <hr>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quibusdam delectus eos porro pariatur, perspiciatis distinctio nihil libero assumenda, esse quos molestias laborum itaque eaque quaerat incidunt nam aliquid soluta.
+        </p>
+        <a href="#" class="btn-gototop">Go to top</a>
+
+        <h1 id="part3">
+           jquery part
+        </h1>
+        <hr>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas, quo? Quia accusamus possimus quaerat vel quas temporibus harum amet doloremque? Aliquam asperiores provident quos voluptas, nam fuga praesentium velit aspernatur?
+        </p>
+        <a href="#" class="btn-gototop">Go to top</a>
+
+
+        <h1 id="part4">
+            protfolio part    
+        </h1>
+        <hr>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, sint ducimus. Facere hic veritatis fuga, nisi eaque maiores illum quia. Quod accusantium, quia nesciunt voluptas exercitationem ducimus officiis ad aut?
+        </p>
+        <a href="#" class="btn-gototop">Go to top</a>
+       
+    </div>
+
+    <script>
+         $('header a, .btn-gototop').click(function(){
+            $.scrollTo(this.hash || 0, 900 );
+            e.preventDefault();
+        }) 
+    </script>
+</body>
+</html>

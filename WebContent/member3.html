@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>회원 가입</title>
+<style>
+table {
+	border : 1px solid black;
+	width : 400px;
+	height : 300px;
+	border-collapse : collapse;
+}
+td{
+	border : 1px solid black;
+	
+}
+td.name {
+	background-color : #ECECEC;
+	font-weight : bold;
+	text-align : center;
+	width : 70px;
+}
+input.ImageAlign {
+	vertical-align : middle;
+}
+input.phone {
+	width : 50px;
+}
+input.search {
+	width : 300px;
+}
+input.email {
+	width : 260px;
+}
+textarea.comment {
+	width : 315px;
+	height : 80px;
+}
+</style>
+</head>
+<body>
+<div align = "center">
+<form>
+	<img src = image/eclass_title.jpg>
+	<table>
+		<tr>
+			<td class = "name" colspan = "2">회원 가입</td>
+		</tr>
+		<tr>
+			<td class = "name">아이디</td>
+			<td>
+			<input type = text>
+			<input type = image src = "image/check.gif" class = "ImageAlign">
+			</td>
+		</tr>
+		<tr>
+			<td class = "name">패스워드</td>
+			<td><input type = password></td>
+		</tr>
+		<tr>
+			<td class = "name">성별</td>
+			<td>
+			<input type = radio name = gen value = "0">남
+			<input type = radio name = gen value = "1" checked>여
+			</td>
+		</tr>
+		<tr>
+			<td class = "name">국적</td>
+			<td>
+			<input type = text readonly value = "대한민국">
+			<input type = button value = "국적변경">
+			</td>
+		</tr>
+		<tr>
+			<td class = "name">휴대폰</td>
+			<td>
+			<select name = phone>
+				<option value = 1 selected>010</option>
+				<option value = 2>011</option>
+				<option value = 3>017</option>
+				<option value = 4>070</option>
+				<option value = 5>080</option>
+			</select>
+			-
+			<input type = text class = "phone">
+			-
+			<input type = text class = "phone">
+			</td>
+		</tr>
+		<tr>
+			<td class = "name">이메일</td>
+			<td><input type = text class = "email"></td>
+		</tr>
+		<tr>
+			<td class = "name">생일</td>
+			<td><input type = "date"></td>
+		</tr>
+		<tr>
+			<td class = "name">관심분야</td>
+			<td>
+			<input type = checkbox name = "hobby" value = "0" >뉴스
+			<input type = checkbox name = "hobby" value = "1" checked>맛집
+			<input type = checkbox name = "hobby" value = "2">책
+			<input type = checkbox name = "hobby" value = "3">영화
+			<input type = checkbox name = "hobby" value = "4">여행
+			</td>
+		</tr>
+		<tr>
+			<td class = "name">가입인사</td>
+			<td><textarea class = "comment">회원들에게 간단한 가입인사를 남겨주세요.</textarea></td>
+		</tr>
+		<tr>
+			<td class = "name">증명사진</td>
+			<td><input type = file class = "search"></td>
+		</tr>
+		<tr>
+			<td class = "name" colspan = "2">
+			<input type = button value = "가입하기" onclick = "document.location = 'member4.html'">
+			<input type = reset value = "다시작성">
+			</td>
+		</tr>
+	</table>
+</form>
+</div>
+</body>
+</html>
