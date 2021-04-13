@@ -1,0 +1,106 @@
+<!-- 1. 자신의 프로필, 포트폴리오, 팀프로젝트, 기타 등의 내용을 담 자신의 홈페이지를 작성하고 클라우드 서비스 사이트에 등록하여 서비스되도록 하고 그 링크를 제출합니다(8주차). 
+
+  - 프로필: 자신의 간단한 프로필을 나타내도록 하며 너무 많은 개인정보가 노출되지 않도록 합니다. 
+
+  - 포트폴리오: 자신의 관심분야, 자신이 해보았던 프로젝트 등 자기소개서에 포함될만한 내용을 작성합니다.  
+
+  - 팀프로젝트: 팀프로젝트 주제, 팀원 및 역할분담 등 팀프로젝트를 소개할 수 있는 내용을 작성합니다. 
+
+  - 자신의 홈페이지에 사용된 웹프로그래밍 기술에 대한 소개를 넣을 수 있습니다.  
+
+  - 기타: 취미 등 자신이 소개하고 싶은 내용을 넣을 수 있습니다. 
+
+2. 자신의 홈페이지는 CSS 기술을 잘 활용하여 3개 이상의 메뉴를 가지는 일관성 있는 페이지로 구성되어야 하며 mobile 환경에서도 컨텐츠를 잘 나타낼 수 있도록 반응형 디자인을 포함해야 합니다.  -->
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="91914389style.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <!-- jQuery CDN --> 
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="jquery.scrollTo.min.js"></script>
+   
+
+    <title>Hyeju Choi</title>
+  </head>
+  
+<style>
+  body{
+    background: url(./img/flower_2.jpg) no-repeat center center;
+    background-size: cover;
+  }
+  #article{
+    border: 5px solid;
+    border-color: black;
+    background-color: white;
+  }
+</style>
+  
+  <body>
+    
+    
+      <header>
+        <div class="box" id="menu">
+        </div>
+      
+      <section>
+      
+      <nav class="nav">
+        <div>
+          <ul>
+              <li ><a href="91914389hyeju.html">Home</a></li>
+              <li class="current"><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>    
+    </section>
+    </header>
+  
+  
+
+<aside></aside>
+
+<section id="main">
+
+  <div  class="container" id="article">
+
+  <p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi distinctio molestias inventore non debitis exercitationem et iusto quia error. Obcaecati delectus hic a soluta corporis. Nulla porro voluptatem eligendi esse, aliquam quisquam repudiandae? Laborum architecto, repellendus nobis impedit nemo rem sint saepe modi eligendi temporibus voluptates illo blanditiis eveniet laudantium. Ut amet eius modi laboriosam, doloremque cum, cupiditate fugit minus quia cumque, harum odit quam dolorum reiciendis beatae libero. Dolorum temporibus laudantium consequatur voluptates dolores. Eaque voluptatum, aliquam dignissimos maiores officiis est sequi voluptates sit sed amet iure. Doloribus, rerum! Ad soluta minima facilis quasi molestiae, expedita error maxime dolor deserunt et harum quibusdam optio assumenda veritatis fuga? Maxime earum fugit quidem sapiente officiis ducimus itaque perspiciatis temporibus? Consequatur laborum quibusdam assumenda a aspernatur minima mollitia vero voluptates. Assumenda quisquam nemo corrupti! Asperiores, assumenda at! Perferendis, et! Voluptatem, quod porro nostrum dolorem ea excepturi consectetur illo velit facere minus, at aperiam voluptatum iste? Autem ut repellat tenetur rem veritatis modi minima magni doloribus adipisci hic harum enim, natus earum nihil! Ipsam, sint doloremque, quos ipsum, eligendi itaque omnis amet consequatur quas neque est ratione asperiores. Maxime, eaque nobis nemo, rem dignissimos illum suscipit veniam dolorum perspiciatis excepturi odit laboriosam explicabo enim possimus aut praesentium perferendis qui unde quia autem in non facere? Reiciendis obcaecati minus atque ipsa eaque iure voluptas ullam eligendi, quibusdam accusamus dolore cum commodi. A perspiciatis vel iusto magni illo cum aliquid nam. Ad nobis temporibus ab. Blanditiis aut, quasi ratione reprehenderit 
+  </p>
+ 
+
+
+
+</div>
+
+</section>
+
+
+
+
+
+<a href="#" class="btn-gototop"></a>
+<br><br><br>
+<footer class="container" >
+  <div class="box" id="footer"></div> 
+</footer>
+
+<script>
+  $('header a, .btn-gototop').click(function(){
+     $.scrollTo(this.hash || 0, 900 );
+     e.preventDefault();
+ }) 
+</script>
+</body>
+
+</html>

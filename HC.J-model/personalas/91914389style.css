@@ -1,0 +1,258 @@
+
+/* Icon Fontawesome&Xeicon */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+/* Google Web Fonts CDN */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+
+
+/* Reset CSS */
+* {
+  box-sizing: border-box;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+a{
+  text-decoration: none;
+  color: #222;
+}
+button, input{
+  outline: none;
+}
+h1,h2,h3,h4,h5,h6{
+  margin-top: 0%;
+  font-weight: normal;
+  line-height: 0em;
+}
+
+/* Default CSS */
+header {
+  background-color: black;
+  color: white;
+  margin-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 60px;
+  margin-top: 0px;
+}
+
+
+body {
+  margin: 0;
+  font-weight:50;
+  background-color: white;
+  color: #222;
+  font-size: 15px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+
+  margin:auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  
+}
+img{vertical-align: text-top;}
+
+/* Next & previous but*/
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 1s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.fas {
+  font-size: 100px;
+  color: black;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+#main .container {
+  font-size: 20px;
+margin-right: 10%;
+margin-left: 5%;
+
+}
+/* Contact Page Background */
+/* .background{
+  width: 100%;
+  height: 100%;
+}
+.background img{
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  object-position: right;
+opacity: 0.3;
+} */
+img {
+  vertical-align: middle;
+}
+
+/* ul {
+  margin-bottom: 50px;
+  padding: 0;
+
+} */
+
+li {
+
+  display: inline;
+font-weight: bold;
+margin-left: 100px;
+
+}
+
+nav{
+  margin-right: 200px;
+  float: right;
+}
+
+header a{
+ 
+
+  width: 100%;
+
+  color: white;
+  text-decoration: none;
+}
+
+header a:hover{
+  color: blue;
+}
+
+#menu.box {
+  float: left;
+  border: 1px;
+  width: 50px;
+  height: 50px;
+}
+
+#menu.box:before {
+  margin-left: 25px;
+  content: '\f0c9';
+  font-family: fontawesome;
+  font-size: 50px;
+  right: 0;
+  bottom: 0;
+  color: white;
+  height: 30px;
+  line-height: 30px;
+}
+
+
+.btn-gototop{
+  float: right;
+  margin-right: 30px;
+}
+
+.btn-gototop:before{
+  content: "\e915";
+  font-family: xeicon;
+  color:black;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+footer {
+
+  background-color: black;
+  color: black;
+  padding-bottom: 150px;
+}
+/* 
+#footer.box{
+background-color:black;
+color: black;
+float: right;
+margin-right:40px;
+
+}
+
+#footer.box:before {
+  content: '\ebee';
+  font-family: xeicon;
+  font-size: 50px;
+  right: 0;
+  bottom: 0;
+  background: yellow;
+  color: black;
+  height: 30px;
+  line-height: 30px;
+} */
+
+/* down
+content: "\e905"; */
+
+
