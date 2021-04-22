@@ -123,6 +123,7 @@ input[id=trigger]:checked+label {
   transition: 0.5s;
   color: black;
   z-index: 900;
+  text-align: left;
 }
 
 .sidebar_2 {
