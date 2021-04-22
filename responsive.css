@@ -118,12 +118,12 @@ input[id=trigger]:checked+label {
 
 /* sidebar */
 .sidebar_1 {
-  width: 40%;
+  width: 55%;
   height: 100vh;
   background-color: blue;
   position: fixed;
   top: 0;
-  left: -40%;
+  left: -55%;
   transition: 0.5s;
   color: black;
   z-index: 900;
@@ -131,13 +131,13 @@ input[id=trigger]:checked+label {
 }
 
 .sidebar_2 {
-  width: 60%;
+  width: 45%;
   height: 100vh;
   background-color: grey;
   opacity: 20%;
   position: fixed;
   top: 0;
-  right: -60%;
+  right: -45%;
   z-index: 900;
   transition: 0.5s;
   color: black;
