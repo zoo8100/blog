@@ -42,12 +42,12 @@
     header {
         background-color: black;
         background-attachment: fixed;
-     position: relative;
         color: white;
+        margin-bottom: 50px;
+        padding-top: 50px;
+        padding-bottom: 60px;
+        margin-top: 0px;
         border-bottom: solid 5px white;
-        text-align: center;
-        width: 100%;
-        float: none;
         overflow: hidden;
     }
 
@@ -76,7 +76,7 @@ position: absolute;
         margin-left: 5%;
         margin-right: 15%;
         margin-top: 10%;
-
+display: inline;
     }
 
 
@@ -88,6 +88,7 @@ position: absolute;
         color: white;
         text-decoration: none;
         padding: 10%;
+        font-weight: bold;
     }
 
     header a:hover {
@@ -385,7 +386,7 @@ opacity: 0.3;
         content: "\e915";
         font-family: xeicon;
         color: black;
-        font-size: 40px;
+        font-size: 50px;
         font-weight: bold;
     }
 
@@ -393,7 +394,7 @@ opacity: 0.3;
 
         background-color: black;
         color: black;
-        padding-bottom: 150px;
+        padding-bottom: 40%;
     }
 
     /* 
