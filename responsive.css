@@ -42,26 +42,29 @@
     header {
         background-color: black;
         background-attachment: fixed;
+     position: relative;
         color: white;
         border-bottom: solid 5px white;
         text-align: center;
         width: 100%;
         float: none;
+        overflow: hidden;
     }
 
 
     ul {
 
-        padding: 0;
+        padding: 10%;
         display: flex;
 
     }
 
 
     nav {
-position: fixed;
-        width: 100%;
+position: absolute;
+        width: 30%;
         height: 10px;
+        flex: 1;
         float: none;
 
     }
@@ -73,6 +76,7 @@ position: fixed;
         margin-left: 5%;
         margin-right: 15%;
         margin-top: 10%;
+
     }
 
 
@@ -83,7 +87,7 @@ position: fixed;
         width: 100%;
         color: white;
         text-decoration: none;
-        padding: 40%;
+        padding: 10%;
     }
 
     header a:hover {
