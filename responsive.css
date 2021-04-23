@@ -199,11 +199,19 @@ display: inline;
         transition: 0.5s;
         color: black;
     }
+    .sidebar_3{
+        width: 25%;
+        height: 100vh;
+        left:-25%; 
+        top: 0;
+        background-color: white;
+        color: black;
+        opacity: 95%;
+        z-index: 900;
+        transition:0.5s;
+        position: fixed;
+      }
 
-    .sidebar_1 h1 {
-        font-weight: 500;
-        margin: 50px;
-    }
 
     input[id=trigger]:checked~.sidebar_1 {
         left: 0;
@@ -212,7 +220,10 @@ display: inline;
     input[id=trigger]:checked~.sidebar_2 {
         right: 0;
     }
-
+    input[id=trigger]:checked~.sidebar_3 {
+        left: 0;
+      }
+      
 
     body {
         margin: 0;
