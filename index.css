@@ -264,6 +264,10 @@ img {
     opacity: 1
   }
 }
+#contactpg{
+  display: flex; 
+  justify-content: center;
+}
 
 #main .container {
   font-size: 20px;
