@@ -76,7 +76,7 @@
       <span></span>
     </label>
     <div class="sidebar_1">
-      <a id="bookmarkme" href="#" title="bookmark this page">Bookmark This Page</a>
+      <a id="bookmarkme" href="#" rel="sidebar" title="bookmark this page">Bookmark This Page</a>
   </div>
   <div class="sidebar_2">
     <input type="checkbox" id="trigger">
@@ -147,33 +147,21 @@
 </script>
 <!-- 즐겨찾기 추가 -->
 <script>
-$("#bookmarkme").click(function () {
-  var url = 'http://' + location.host; // i'm in a sub-page and bookmarking the home page
-  var name = "Hyeju's blog";
-
-  if (navigator.userAgent.toLowerCase().indexOf('chrome') > -1){ //chrome
-    alert("In order to bookmark go to the homepage and press " 
-        + (navigator.userAgent.toLowerCase().indexOf('mac') != -1 ? 
-            'Command/Cmd' : 'CTRL') + "+D.")
-  } 
-  else if (window.sidebar) { // Mozilla Firefox Bookmark
-    //important for firefox to add bookmarks - remember to check out the checkbox on the popup
-    $(this).attr('rel', 'sidebar');
-    //set the appropriate attributes
-    $(this).attr('href', url);
-    $(this).attr('title', name);
-
-    //add bookmark:
-    //  window.sidebar.addPanel(name, url, '');
-    //  window.sidebar.addPanel(url, name, '');
-    window.sidebar.addPanel('', '', '');
-  } 
-  else if (window.external) { // IE Favorite
-        window.external.addFavorite(url, name);
-  } 
-  return;
+$(document).ready(function() {
+  $("#bookmarkme").click(function() {
+    if (window.sidebar) { // Mozilla Firefox Bookmark
+      window.sidebar.addPanel(location.href,document.title,"");
+    } else if(window.external) { // IE Favorite
+      window.external.AddFavorite(location.href,document.title); }
+    else if(window.opera && window.print) { // Opera Hotlist
+      this.title=document.title;
+      return true;
+    }
+  });
 });
 </script>
+<!-- Go to www.addthis.com/dashboard to customize your tools --> 
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-6082c00558ab2569"></script>
 </body>
 
 </html>
