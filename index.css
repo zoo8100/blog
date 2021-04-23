@@ -33,6 +33,7 @@ h6 {
   line-height: 2em;
 }
 
+
 /* Default CSS */
 header {
   background-color: black;
@@ -269,6 +270,11 @@ img {
   margin-right: 10%;
   margin-left: 5%;
 
+}
+#main li{
+ left: 0;
+ margin-left: -45px;
+ 
 }
 
 /* Contact Page Background */
