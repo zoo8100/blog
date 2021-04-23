@@ -176,7 +176,7 @@ display: inline;
     .sidebar_1 {
         width: 60%;
         height: 100vh;
-        background-color: blue;
+        background-color: rgb(0,60,128);
         opacity: 50%;
         position: fixed;
         top: 0;
