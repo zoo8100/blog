@@ -1,12 +1,12 @@
-   /* Icon Fontawesome&Xeicon */
-   @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-   @import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+  /* Icon Fontawesome&Xeicon */
+  @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+  @import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
 
-   /* Google Web Fonts CDN */
-   @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
-
+  /* Google Web Fonts CDN */
+  @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
 @media(min-width: 0px) and (max-width:700px) {
 
+  
  
 
     /* Reset CSS */
