@@ -373,9 +373,8 @@ header .current a {
 
 footer {
 
-  background-color: black;
-  color: black;
-  padding-bottom: 15%;
+  
+padding: 5%;
 }
 
 /* 
