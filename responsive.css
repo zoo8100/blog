@@ -84,11 +84,11 @@ display: inline;
 
     header a {
         flex: 1;
-        padding:10%;
+        padding:20%;
         width: 100%;
         color: white;
         text-decoration: none;
-        padding: 10%;
+
         font-weight: bold;
         font-size: 20px;
     }
