@@ -267,7 +267,7 @@ img {
 #contactpg{
   display: flex; 
   justify-content: center;
-  overflow: hidden;
+
 }
 
 #main .container {
