@@ -76,7 +76,7 @@
       <span></span>
     </label>
     <div class="sidebar_1">
-      <a href="javascript:bookmark()">즐겨찾기 추가</a>
+      <a id="bookmarkme" href="#" title="bookmark this page">Bookmark This Page</a>
   </div>
   <div class="sidebar_2">
     <input type="checkbox" id="trigger">
@@ -147,9 +147,32 @@
 </script>
 <!-- 즐겨찾기 추가 -->
 <script>
-function bookmark(){
-window.external.AddFavorite('https://inspiring-shirley-e7b0f4.netlify.app/', "Hyeju's blog")
-}
+$("#bookmarkme").click(function () {
+  var url = 'http://' + location.host; // i'm in a sub-page and bookmarking the home page
+  var name = "Hyeju's blog";
+
+  if (navigator.userAgent.toLowerCase().indexOf('chrome') > -1){ //chrome
+    alert("In order to bookmark go to the homepage and press " 
+        + (navigator.userAgent.toLowerCase().indexOf('mac') != -1 ? 
+            'Command/Cmd' : 'CTRL') + "+D.")
+  } 
+  else if (window.sidebar) { // Mozilla Firefox Bookmark
+    //important for firefox to add bookmarks - remember to check out the checkbox on the popup
+    $(this).attr('rel', 'sidebar');
+    //set the appropriate attributes
+    $(this).attr('href', url);
+    $(this).attr('title', name);
+
+    //add bookmark:
+    //  window.sidebar.addPanel(name, url, '');
+    //  window.sidebar.addPanel(url, name, '');
+    window.sidebar.addPanel('', '', '');
+  } 
+  else if (window.external) { // IE Favorite
+        window.external.addFavorite(url, name);
+  } 
+  return;
+});
 </script>
 </body>
 
