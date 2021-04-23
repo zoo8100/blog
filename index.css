@@ -372,9 +372,10 @@ header .current a {
 }
 
 footer {
-
-  
 padding: 5%;
+}
+footer div{
+  font-size: 18px;
 }
 
 /* 
