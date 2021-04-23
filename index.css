@@ -70,10 +70,10 @@ label[for=trigger] {
 label[for=trigger] span {
   display: block;
   border-radius: 10%;
-  height: 5px;
+  height: 8px;
   background-color: white;
   position: absolute;
-  width: 100%;
+  width: 90px;
   left: 10px;
   transition: 0.3s;
   z-index: 1000;
@@ -81,7 +81,7 @@ label[for=trigger] span {
 }
 
 label[for=trigger] span:nth-child(1) {
-  top: 0%;
+  top: -10%;
 }
 
 label[for=trigger] span:nth-child(2) {
@@ -89,7 +89,7 @@ label[for=trigger] span:nth-child(2) {
 }
 
 label[for=trigger] span:nth-child(3) {
-  top: 100%;
+  top: 110%;
 }
 
 /* Sidebar Hamburger lines rotate */
@@ -313,7 +313,7 @@ header a {
   width: 100%;
   color: white;
   text-decoration: none;
- font-size: 20px;
+ font-size: 30px;
  flex: 1;
 }
 

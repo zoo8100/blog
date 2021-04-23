@@ -90,6 +90,7 @@ display: inline;
         text-decoration: none;
         padding: 10%;
         font-weight: bold;
+        font-size: 20px;
     }
 
     header a:hover {
