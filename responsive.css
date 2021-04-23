@@ -398,12 +398,12 @@ opacity: 0.3;
     }
 
     footer {
-
-        background-color: black;
-        color: black;
-        padding-bottom: 15%;
-    }
-
+        padding: 5%;
+        }
+        footer div{
+          font-size: 18px;
+        }
+        
     /* 
 #footer.box{
 background-color:black;
