@@ -303,6 +303,7 @@ li {
 
 nav {
   margin-right: 200px;
+  width: 30;
   float: right;
 display: flex;
 }
