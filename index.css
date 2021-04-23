@@ -127,7 +127,7 @@ input[id=trigger]:checked+label {
   left: -30%;
   transition: 0.5s;
   color: black;
-  z-index: 900;
+  z-index: 800;
   text-align: left;
 }
 
@@ -144,9 +144,17 @@ input[id=trigger]:checked+label {
   color: black;
 }
 
-.sidebar_1 h1 {
-  font-weight: 500;
-  margin: 50px;
+.sidebar_3{
+  width: 25%;
+  height: 100vh;
+  left:-25%; 
+  top: 0;
+  background-color: white;
+  color: black;
+  opacity: 95%;
+  z-index: 900;
+  transition:0.5s;
+  position: fixed;
 }
 
 input[id=trigger]:checked~.sidebar_1 {
@@ -155,6 +163,9 @@ input[id=trigger]:checked~.sidebar_1 {
 
 input[id=trigger]:checked~.sidebar_2 {
   right: 0;
+}
+input[id=trigger]:checked~.sidebar_3 {
+  left: 0;
 }
 
 
