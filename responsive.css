@@ -4,6 +4,7 @@
 
   /* Google Web Fonts CDN */
   @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
 @media(min-width: 0px) and (max-width:700px) {
 
   
@@ -90,7 +91,7 @@ display: inline;
         text-decoration: none;
 
         font-weight: bold;
-        font-size: 20px;
+        font-size: 15px;
     }
 
     header a:hover {
@@ -103,7 +104,7 @@ display: inline;
 
 
     /* Hamburger button */
-    input[id=trigger] {
+    /* input[id=trigger] {
         display: none;
     }
 
@@ -147,10 +148,10 @@ display: inline;
 
     label[for=trigger] span:nth-child(3) {
         top: 100%;
-    }
+    } */
 
     /* Sidebar Hamburger lines rotate */
-    input[id=trigger]:checked+label span:nth-child(1) {
+    /* input[id=trigger]:checked+label span:nth-child(1) {
         transform: rotate(45deg);
         top: 50%;
         background-color: rgb(80, 80, 80);
@@ -170,10 +171,10 @@ display: inline;
     input[id=trigger]:checked+label {
         left: 60%;
 
-    }
+    } */
 
     /* sidebar */
-    .sidebar_1 {
+    /* .sidebar_1 {
         width: 60%;
         height: 100vh;
         background-color: rgb(0,60,128);
@@ -210,10 +211,10 @@ display: inline;
         z-index: 900;
         transition:0.5s;
         position: fixed;
-      }
+      } */
 
 
-    input[id=trigger]:checked~.sidebar_1 {
+    /* input[id=trigger]:checked~.sidebar_1 {
         left: 0;
     }
 
@@ -223,7 +224,7 @@ display: inline;
     input[id=trigger]:checked~.sidebar_3 {
         left: 0;
       }
-      
+       */
 
     body {
         margin: 0;
@@ -231,6 +232,7 @@ display: inline;
         background-color: white;
         color: #222;
         font-size: 15px;
+        overflow: hidden;
     }
 
     /* Slideshow container */
@@ -250,6 +252,9 @@ display: inline;
 
     img {
         vertical-align: text-top;
+        width: 30%;
+  clear:both;
+  margin-bottom: 10%;
     }
 
     /* Next & previous but*/
@@ -359,6 +364,20 @@ height: 10%;
         /* flex-wrap */
     }
 
+#main li{
+ left: 0;
+ margin-left: -45px;
+ 
+}
+#hsmain div{
+  margin: 0 5%;
+
+}
+#hsmain h1{
+  font-size: 45px;
+}
+
+
     /* Contact Page Background */
     /* .background{
   width: 100%;
@@ -373,7 +392,19 @@ opacity: 0.3;
 } */
     img {
         vertical-align: middle;
+        clear: both;
+        margin-bottom: 10%;
+        width: 30%;
     }
+
+    .container h2{
+        flex: 1;
+        margin: 10%;
+        font-family: 'Nanum Myeongjo', serif;
+        font-size: 30px;
+      
+      }
+      
 
     /* #menu.box {
   float: left;
