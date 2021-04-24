@@ -56,6 +56,7 @@
         <ul>
             <li class="current"><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
       
@@ -63,7 +64,7 @@
   </div>  
   </section>
    <!-- Hamburger -->
-   <div class="sidemenu">
+   <!-- <div class="sidemenu">
     <input type="checkbox" id="trigger">
     <label for="trigger">
       <span></span>
@@ -77,11 +78,11 @@
     <div class="sidebar_2">
       <input type="checkbox" id="trigger">
     <label for="trigger">
-    </label>
+    </label> -->
       <!-- onclick="history.go(0)" -->
     </div>
     <div class="sidebar_3">
-<!-- Currency Converter Script - FxExchangeRate.com  --><div class="exchange" style="font-size:16px;font-family:sans-serif,Arial,Helvetica;width:248px; line-height:24px;border:1px solid #000000;background-color:#FFFFFF;"><div style="background-color:#002757;height:24px; font-weight:bold;text-align:left;padding-top:3px; width:100%;"><i style="background-size: contain;background-position: 50%;background-repeat: no-repeat; position: relative;display: inline-block;width: 1.33333333em;line-height: 1em;margin:2px 0 0 5px;; background-image:url(https://w.fxexchangerate.com/static/flags/usd.webp);">&nbsp;</i><a rel="nofollow" style="color:#FFFFFF;padding-left:5px;text-decoration:none;" href="https://usd.fxexchangerate.com">United States Dollar</a></div><script type="text/javascript" src="https://w.fxexchangerate.com/converter.php?fm=USD&ft=USD,EUR,GBP,AUD,CAD,CHF,HKD,KRW,&lg=en&am=1&ty=2"></script></div><!--  End of Currency Converter Script -  FxExchangeRate.com -->
+
       <a id="bookmarkme" href="#" rel="sidebar" title="bookmark this page" style="color: black;"><div class="bookmark"></div></a>
 
   
@@ -167,21 +168,7 @@
      e.preventDefault();
  }) 
  
-//  <!-- 즐겨찾기 추가 -->
-<script>
-$(document).ready(function() {
-  $("#bookmarkme").click(function() {
-    if (window.sidebar) { // Mozilla Firefox Bookmark
-      window.sidebar.addPanel(location.href,document.title,"");
-    } else if(window.external) { // IE Favorite
-      window.external.AddFavorite(location.href,document.title); }
-    else if(window.opera && window.print) { // Opera Hotlist
-      this.title=document.title;
-      return true;
-    }
-  });
-});
-</script>
+
 
 </script>
 <div class="container">

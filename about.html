@@ -62,13 +62,14 @@
           <ul>
               <li ><a href="index.html">Home</a></li>
               <li class="current"><a href="about.html">About</a></li>
+              <li ><a href="Gallery.html">Gallery</a></li>
               <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
       </nav>    
     </section>
        <!-- Hamburger -->
-   <div class="sidemenu">
+   <!-- <div class="sidemenu">
     <input type="checkbox" id="trigger">
     <label for="trigger">
       <span></span>
@@ -76,12 +77,12 @@
       <span></span>
     </label>
     <div class="sidebar_1">
-      <a id="bookmarkme" href="#" rel="sidebar" title="bookmark this page">Bookmark This Page</a>
+    
   </div>
   <div class="sidebar_2">
     <input type="checkbox" id="trigger">
   <label for="trigger">
-  </label>
+  </label> -->
     <!-- onclick="history.go(0)" -->
   </div>
 </div>
@@ -145,21 +146,7 @@
      e.preventDefault();
  }) 
 </script>
-<!-- 즐겨찾기 추가 -->
-<script>
-$(document).ready(function() {
-  $("#bookmarkme").click(function() {
-    if (window.sidebar) { // Mozilla Firefox Bookmark
-      window.sidebar.addPanel(location.href,document.title,"");
-    } else if(window.external) { // IE Favorite
-      window.external.AddFavorite(location.href,document.title); }
-    else if(window.opera && window.print) { // Opera Hotlist
-      this.title=document.title;
-      return true;
-    }
-  });
-});
-</script>
+
 <!-- Go to www.addthis.com/dashboard to customize your tools --> 
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-6082c00558ab2569"></script>
 </body>

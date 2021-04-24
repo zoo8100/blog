@@ -4,6 +4,7 @@
   
   /* Google Web Fonts CDN */
   @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
 @media(min-width:701px) {
 
 /* Reset CSS */
@@ -28,7 +29,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: 0%;
+
   font-weight: normal;
   line-height: 2em;
 }
@@ -42,13 +43,13 @@ header {
   margin-bottom: 50px;
   padding-top: 50px;
   padding-bottom: 60px;
-  margin-top: 0px;
+  margin-top: 0%;
   border-bottom: solid 5px white;
   overflow: hidden;
 }
 
 /* Hamburger button */
-input[id=trigger] {
+/* input[id=trigger] {
   display: none;
 }
 
@@ -94,7 +95,7 @@ label[for=trigger] span:nth-child(3) {
 }
 
 /* Sidebar Hamburger lines rotate */
-input[id=trigger]:checked+label span:nth-child(1) {
+/* input[id=trigger]:checked+label span:nth-child(1) {
   transform: rotate(45deg);
   top: 50%;
   background-color: rgb(80, 80, 80);
@@ -114,9 +115,9 @@ input[id=trigger]:checked+label span:nth-child(3) {
 input[id=trigger]:checked+label {
   left: 30%;
 
-}
+} */ 
 
-
+/* Hamburger menubar
 .sidebar_1 {
   width: 30%;
   height: 100vh;
@@ -143,36 +144,18 @@ input[id=trigger]:checked+label {
   transition: 0.5s;
   color: black;
 }
+ */
 
-.sidebar_3{
-  width: 28.5%;
-  height: 100vh;
-  left:-28.5%; 
-  top: 0;
-  background-color: white;
-  color: black;
-  opacity: 95%;
-  z-index: 900;
-  transition:0.5s;
-  position: fixed;
- 
-}
-
-
+/* 
 input[id=trigger]:checked~.sidebar_1 {
   left: 0;
 }
 
 input[id=trigger]:checked~.sidebar_2 {
   right: 0;
-}
-input[id=trigger]:checked~.sidebar_3 {
-  left: 0;
-}
+} */
 
-.exchange{
-  left:5%;
-}
+
 body {
   margin: 0;
   font-weight: 50;
@@ -197,7 +180,7 @@ body {
 }
 
 img {
-  vertical-align: text-top;
+
 }
 
 /* Next & previous but*/
@@ -287,14 +270,23 @@ img {
 
 #main .container {
   font-size: 20px;
-  margin-right: 10%;
-  margin-left: 5%;
+float: none;
 
 }
 #main li{
  left: 0;
  margin-left: -45px;
  
+}
+#hsmain div{
+  margin: 0 5%;
+
+}
+#hsmain h1{
+  font-size: 45px;
+}
+#imgbx{
+  display: flex;
 }
 
 /* Contact Page Background */
@@ -311,7 +303,21 @@ opacity: 0.3;
 } */
 img {
   vertical-align: middle;
+  width: 30%;
+  clear:both;
+  margin-bottom: 10%;
+  
 }
+
+.container h2{
+  flex: 1;
+  margin: 10%;
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 30px;
+
+}
+
+
 
 /* ul {
   margin-bottom: 50px;
