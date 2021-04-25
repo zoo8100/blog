@@ -1,55 +1,56 @@
   /* Icon Fontawesome&Xeicon */
   @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
   @import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
-  
+
   /* Google Web Fonts CDN */
   @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
-@media(min-width:701px) {
 
-/* Reset CSS */
-* {
-  box-sizing: border-box;
-  font-family: 'Noto Sans KR', sans-serif;
-}
+  @media(min-width:701px) {
 
-a {
-  text-decoration: none;
-  color: #222;
-}
+    /* Reset CSS */
+    * {
+      box-sizing: border-box;
+      font-family: 'Noto Sans KR', sans-serif;
+    }
 
-button,
-input {
-  outline: none;
-}
+    a {
+      text-decoration: none;
+      color: #222;
+    }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+    button,
+    input {
+      outline: none;
+    }
 
-  font-weight: normal;
-  line-height: 2em;
-}
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+
+      font-weight: normal;
+      line-height: 2em;
+    }
 
 
-/* Default CSS */
-header {
-  background-color: black;
-  background-attachment: fixed;
-  color: white;
-  margin-bottom: 50px;
-  padding-top: 50px;
-  padding-bottom: 60px;
-  margin-top: 0%;
-  border-bottom: solid 5px white;
-  overflow: hidden;
-}
+    /* Default CSS */
+    header {
+      background-color: black;
+      background-attachment: fixed;
+      color: white;
+      margin-bottom: 50px;
+      padding-top: 50px;
+      padding-bottom: 60px;
+      margin-top: 0%;
+      border-bottom: solid 5px white;
+      overflow: hidden;
+    }
 
-/* Hamburger button */
-/* input[id=trigger] {
+    /* Hamburger button */
+    /* input[id=trigger] {
   display: none;
 }
 
@@ -95,7 +96,7 @@ label[for=trigger] span:nth-child(3) {
 }
 
 /* Sidebar Hamburger lines rotate */
-/* input[id=trigger]:checked+label span:nth-child(1) {
+    /* input[id=trigger]:checked+label span:nth-child(1) {
   transform: rotate(45deg);
   top: 50%;
   background-color: rgb(80, 80, 80);
@@ -115,9 +116,9 @@ input[id=trigger]:checked+label span:nth-child(3) {
 input[id=trigger]:checked+label {
   left: 30%;
 
-} */ 
+} */
 
-/* Hamburger menubar
+    /* Hamburger menubar
 .sidebar_1 {
   width: 30%;
   height: 100vh;
@@ -146,7 +147,7 @@ input[id=trigger]:checked+label {
 }
  */
 
-/* 
+    /* 
 input[id=trigger]:checked~.sidebar_1 {
   left: 0;
 }
@@ -156,139 +157,144 @@ input[id=trigger]:checked~.sidebar_2 {
 } */
 
 
-body {
-  margin: 0;
-  font-weight: 50;
-  background-color: white;
-  color: #222;
-  font-size: 15px;
-}
+    body {
+      margin: 0;
+      font-weight: 50;
+      background-color: white;
+      color: #222;
+      font-size: 15px;
+    }
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 500px;
-  position: relative;
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 500px;
+      position: relative;
 
-  margin: auto;
+      margin: auto;
 
-}
+    }
 
-/* Hide the images by default */
-.mySlides {
-  display: none;
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
 
-}
-
-
-
-/* Next & previous but*/
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 1s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
+    }
 
 
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
 
-.active,
-.dot:hover {
-  background-color: #717171;
-}
+    /* Next & previous but*/
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 1s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
 
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
 
-.fas {
-  font-size: 100px;
-  color: black;
-}
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
 
-@-webkit-keyframes fade {
-  from {
-    opacity: .4
-  }
 
-  to {
-    opacity: 1
-  }
-}
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
 
-@keyframes fade {
-  from {
-    opacity: .4
-  }
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
 
-  to {
-    opacity: 1
-  }
-}
-#contactpg{
-  display: flex; 
-  justify-content: center;
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
 
-}
+    .fas {
+      font-size: 100px;
+      color: black;
+    }
 
-#main .container {
-  font-size: 20px;
-float: none;
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
 
-}
-#main li{
- left: 0;
- margin-left: -45px;
- 
-}
-#hsmain div{
-  margin: 0 5%;
+      to {
+        opacity: 1
+      }
+    }
 
-}
-#hsmain h1{
-  font-size: 45px;
-}
-#imgbx{
-  display: flex;
-}
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
 
-/* Contact Page Background */
-/* .background{
+      to {
+        opacity: 1
+      }
+    }
+
+    #contactpg {
+      display: flex;
+      justify-content: center;
+
+    }
+
+    #main .container {
+      font-size: 20px;
+      float: none;
+
+    }
+
+    #main li {
+      left: 0;
+      margin-left: -45px;
+
+    }
+
+    #hsmain div {
+      margin: 0 5%;
+
+    }
+
+    #hsmain h1 {
+      font-size: 45px;
+    }
+
+    #imgbx {
+      display: flex;
+    }
+
+    /* Contact Page Background */
+    /* .background{
   width: 100%;
   height: 100%;
 }
@@ -299,78 +305,81 @@ float: none;
   object-position: right;
 opacity: 0.3;
 } */
-img {
-  vertical-align: middle;
-  width: 30%;
-  clear:both;
-  margin-bottom: 10%;
-  
-}
+    img {
+      vertical-align: middle;
+      width: 30%;
+      clear: both;
+      margin-bottom: 10%;
 
-.container h2{
-  flex: 1;
-  margin: 10%;
-  font-family: 'Nanum Myeongjo', serif;
-  font-size: 30px;
+    }
 
-}
+    .container h2 {
+      flex: 1;
+      margin: 10%;
+      font-family: 'Nanum Myeongjo', serif;
+      font-size: 30px;
+
+    }
 
 
 
-/* ul {
+    /* ul {
   margin-bottom: 50px;
   padding: 0;
 
 } */
 
-li {
+    li {
 
-  display: inline;
-  font-weight: bold;
-  margin-left: 100px;
+      display: inline;
+      font-weight: bold;
+      margin-left: 100px;
 
-}
+    }
 
 
-nav {
-  margin-right: 200px;
-  width: 30;
-  float: right;
-display: flex;
-}
+    nav {
+      margin-right: 200px;
+      width: 30;
+      float: right;
+      display: flex;
+    }
 
-header a {
+    header a {
 
-  padding: 20px;
-  width: 100%;
-  color: white;
-  text-decoration: none;
- font-size: 30px;
- flex: 1;
-}
+      padding: 20px;
+      width: 100%;
+      color: white;
+      text-decoration: none;
+      font-size: 30px;
+      flex: 1;
+    }
 
-header a:hover {
-  color: blue;
-}
+    header a:hover {
+      color: blue;
+    }
 
-header .current a {
-  color:blue;
-}
+    header .current a {
+      color: blue;
+    }
 
-.bookmark{
-  float: left;
- width: 50px;
- height: 50px;
-}
-.bookmark:before{
-  content:'\f02e' ;
-  font-family: fontawesome;
-  font-size:50px;
-}
-#bookmarkme a:hover{
-  color: white;
-}
-/* #menu.box {
+    .bookmark {
+      float: left;
+      width: 50px;
+      height: 50px;
+    }
+
+    .bookmark:before {
+      content: '\f02e';
+      font-family: fontawesome;
+      font-size: 50px;
+    }
+
+    #bookmarkme a:hover {
+      color: white;
+    }
+
+    /* #menu.box {
   float: left;
   border: 1px;
   width: 50px;
@@ -390,27 +399,28 @@ header .current a {
 } */
 
 
-.btn-gototop {
-  float: right;
-  margin-right: 30px;
-}
+    .btn-gototop {
+      float: right;
+      margin-right: 30px;
+    }
 
-.btn-gototop:before {
-  content: "\e915";
-  font-family: xeicon;
-  color: black;
-  font-size: 60px;
-  font-weight: bold;
-}
+    .btn-gototop:before {
+      content: "\e915";
+      font-family: xeicon;
+      color: black;
+      font-size: 60px;
+      font-weight: bold;
+    }
 
-footer {
-padding: 5%;
-}
-footer div{
-  font-size: 18px;
-}
+    footer {
+      padding: 5%;
+    }
 
-/* 
+    footer div {
+      font-size: 18px;
+    }
+
+    /* 
 #footer.box{
 background-color:black;
 color: black;
@@ -431,6 +441,6 @@ margin-right:40px;
   line-height: 30px;
 } */
 
-/* down
+    /* down
 content: "\e905"; */
-}
+  }

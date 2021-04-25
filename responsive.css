@@ -5,106 +5,107 @@
   /* Google Web Fonts CDN */
   @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
-@media(min-width: 0px) and (max-width:700px) {
 
-  
- 
-
-    /* Reset CSS */
-    * {
-        box-sizing: border-box;
-        font-family: 'Noto Sans KR', sans-serif;
-    }
-
-    a {
-        text-decoration: none;
-        color: #222;
-        text-align: center;
-    }
-
-    button,
-    input {
-        outline: none;
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    p {
-        margin-top: 0%;
-        font-weight: normal;
-        line-height: 1em;
-
-    }
-
-    /* Default CSS */
-    header {
-        background-color: black;
-        background-attachment: fixed;
-        color: white;
-        margin-bottom: 50px;
-        padding-top: 50px;
-        padding-bottom: 60px;
-        margin-top: 0px;
-        border-bottom: solid 5px white;
-        overflow: hidden;
-    }
-
-
-    ul {
-
-        padding: 10%;
-        display: flex;
-
-    }
-
-
-    nav {
-position: absolute;
-        width: 30%;
-        height: 10%;
-        flex: 1;
-        float: none;
-        
-    }
-
-
-    li {
-        flex: 1;
-        font-weight: bold;
-        margin-left: 5%;
-        margin-right: 15%;
-        margin-top: 10%;
-display: inline;
-    }
+  @media(min-width: 0px) and (max-width:700px) {
 
 
 
-    header a {
-        flex: 1;
-        padding:20%;
-        width: 100%;
-        color: white;
-        text-decoration: none;
 
-        font-weight: bold;
-        font-size: 15px;
-    }
+      /* Reset CSS */
+      * {
+          box-sizing: border-box;
+          font-family: 'Noto Sans KR', sans-serif;
+      }
 
-    header a:hover {
-        color: blue;
-    }
+      a {
+          text-decoration: none;
+          color: #222;
+          text-align: center;
+      }
 
-    header .current a {
-        color: blue;
-    }
+      button,
+      input {
+          outline: none;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p {
+
+          font-weight: normal;
+          line-height: 1em;
+
+      }
+
+      /* Default CSS */
+      header {
+          background-color: black;
+          background-attachment: fixed;
+          color: white;
+          margin-bottom: 50px;
+          padding-top: 10px;
+          padding-bottom: 100px;
+          margin-top: 0px;
+          border-bottom: solid 5px white;
+          overflow: hidden;
+      }
 
 
-    /* Hamburger button */
-    /* input[id=trigger] {
+      ul {
+
+          padding: 10%;
+          display: flex;
+
+      }
+
+
+      nav {
+          position: absolute;
+          width: 30%;
+          height: 10%;
+          flex: 1;
+          float: none;
+
+      }
+
+
+      li {
+          flex: 1;
+          font-weight: bold;
+          margin-left: 5%;
+          margin-right: 5%;
+          margin-top: 20%;
+          display: inline;
+      }
+
+
+
+      header a {
+          flex: 1;
+          padding: 20%;
+          width: 100%;
+          color: white;
+          text-decoration: none;
+
+          font-weight: bold;
+          font-size: 15px;
+      }
+
+      header a:hover {
+          color: blue;
+      }
+
+      header .current a {
+          color: blue;
+      }
+
+
+      /* Hamburger button */
+      /* input[id=trigger] {
         display: none;
     }
 
@@ -150,8 +151,8 @@ display: inline;
         top: 100%;
     } */
 
-    /* Sidebar Hamburger lines rotate */
-    /* input[id=trigger]:checked+label span:nth-child(1) {
+      /* Sidebar Hamburger lines rotate */
+      /* input[id=trigger]:checked+label span:nth-child(1) {
         transform: rotate(45deg);
         top: 50%;
         background-color: rgb(80, 80, 80);
@@ -173,8 +174,8 @@ display: inline;
 
     } */
 
-    /* sidebar */
-    /* .sidebar_1 {
+      /* sidebar */
+      /* .sidebar_1 {
         width: 60%;
         height: 100vh;
         background-color: rgb(0,60,128);
@@ -214,7 +215,7 @@ display: inline;
       } */
 
 
-    /* input[id=trigger]:checked~.sidebar_1 {
+      /* input[id=trigger]:checked~.sidebar_1 {
         left: 0;
     }
 
@@ -226,160 +227,159 @@ display: inline;
       }
        */
 
-    body {
-        margin: 0;
-        font-weight: 50;
-        background-color: white;
-        color: #222;
-        font-size: 15px;
-        overflow: hidden;
-    }
+      body {
+          margin: 0;
+          font-weight: 50;
+          background-color: white;
+          color: #222;
+          font-size: 15px;
 
-    /* Slideshow container */
-    .slideshow-container {
-        max-width: 500px;
-        position: relative;
-
-        margin: auto;
-
-    }
-
-    /* Hide the images by default */
-    .mySlides {
-        display: none;
-
-    }
-
-    img {
-        vertical-align: text-top;
-        width: 30%;
-  clear:both;
-  margin-bottom: 10%;
-    }
-
-    /* Next & previous but*/
-    .prev,
-    .next {
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        width: auto;
-        margin-top: -22px;
-        padding: 16px;
-        color: white;
-        font-weight: bold;
-        font-size: 18px;
-        transition: 1s ease;
-        border-radius: 0 3px 3px 0;
-        user-select: none;
-    }
-
-    /* Position the "next button" to the right */
-    .next {
-        right: 0;
-        border-radius: 3px 0 0 3px;
-    }
-
-    /* On hover, add a black background color with a little bit see-through */
-    .prev:hover,
-    .next:hover {
-        background-color: rgba(0, 0, 0, 0.8);
-    }
-
-
-    /* The dots/bullets/indicators */
-    .dot {
-        cursor: pointer;
-        height: 15px;
-        width: 15px;
-        margin: 0 2px;
-        background-color: #bbb;
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color 0.6s ease;
-    }
-
-    .active,
-    .dot:hover {
-        background-color: #717171;
-    }
-
-    /* Fading animation */
-    .fade {
-        -webkit-animation-name: fade;
-        -webkit-animation-duration: 1.5s;
-        animation-name: fade;
-        animation-duration: 1.5s;
-    }
-
-    .fas {
-        font-size: 100px;
-        color: black;
-    }
-
-    @-webkit-keyframes fade {
-        from {
-            opacity: .4
-        }
-
-        to {
-            opacity: 1
-        }
-    }
-
-    @keyframes fade {
-        from {
-            opacity: .4
-        }
-
-        to {
-            opacity: 1
-        }
-    }
-    #contactpg{
-        display: flex; 
-        justify-content: center;
-      overflow: hidden;
       }
 
-    #main {
-        margin-top: 10%;
-        font-size: 20px;
-        display: flex;
-width: 100%;
-    }
+      /* Slideshow container */
+      .slideshow-container {
+          max-width: 500px;
+          position: relative;
 
-    #main .container {
-height: 10%;
-        line-height: 1.5em;
-     left: 0%;
-     flex: 1;
-    }
+          margin: auto;
 
-    #main h3 {
-        margin-right: 5%;
-        font-size: 0.8em;
-        line-height: 1.5em;
-        flex: 1;
-        /* flex-wrap */
-    }
+      }
 
-#main li{
- left: 0;
- margin-left: -45px;
- 
-}
-#hsmain div{
-  margin: 0 5%;
+      /* Hide the images by default */
+      .mySlides {
+          display: none;
 
-}
-#hsmain h1{
-  font-size: 45px;
-}
+      }
+
+      img {
+          vertical-align: text-top;
+          width: 30%;
+          clear: both;
+          margin-bottom: 10%;
+      }
+
+      /* Next & previous but*/
+      .prev,
+      .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          margin-top: -22px;
+          padding: 16px;
+          color: white;
+          font-weight: bold;
+          font-size: 18px;
+          transition: 1s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+      }
+
+      /* Position the "next button" to the right */
+      .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+      }
+
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover,
+      .next:hover {
+          background-color: rgba(0, 0, 0, 0.8);
+      }
 
 
-    /* Contact Page Background */
-    /* .background{
+      /* The dots/bullets/indicators */
+      .dot {
+          cursor: pointer;
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+      }
+
+      .active,
+      .dot:hover {
+          background-color: #717171;
+      }
+
+      /* Fading animation */
+      .fade {
+          -webkit-animation-name: fade;
+          -webkit-animation-duration: 1.5s;
+          animation-name: fade;
+          animation-duration: 1.5s;
+      }
+
+      .fas {
+          font-size: 100px;
+          color: black;
+      }
+
+      @-webkit-keyframes fade {
+          from {
+              opacity: .4
+          }
+
+          to {
+              opacity: 1
+          }
+      }
+
+      @keyframes fade {
+          from {
+              opacity: .4
+          }
+
+          to {
+              opacity: 1
+          }
+      }
+
+      #contactpg {
+          display: flex;
+          justify-content: center;
+          overflow: hidden;
+      }
+
+      #main {
+          margin-top: 10%;
+          font-size: 20px;
+         
+          width: 100%;
+      }
+
+      #main .container {
+          height: 10%;
+          line-height: 1.5em;
+          left: 0%;
+      
+      }
+
+
+      #main li {
+          left: 0;
+          margin-left: -45px;
+
+      }
+
+      #hsmain div {
+          margin: 0 5%;
+
+      }
+
+      #hsmain h1 {
+          font-size: 45px;
+      }
+
+      #imgbx {
+          display: flex;
+      }
+
+      /* Contact Page Background */
+      /* .background{
   width: 100%;
   height: 100%;
 }
@@ -390,23 +390,45 @@ height: 10%;
   object-position: right;
 opacity: 0.3;
 } */
-    img {
-        vertical-align: middle;
-        clear: both;
-        margin-bottom: 10%;
-        width: 30%;
-    }
+      img {
+          vertical-align: middle;
+          clear: both;
+          margin-bottom: 10%;
+          width: 30%;
+      }
 
-    .container h2{
-        flex: 1;
-        margin: 10%;
-        font-family: 'Nanum Myeongjo', serif;
-        font-size: 30px;
-      
+      .container h2 {
+          flex: 1;
+          margin: 10%;
+          font-family: 'Nanum Myeongjo', serif;
+          font-size: 20px;
+          line-height: 2rem;
       }
       
 
-    /* #menu.box {
+.video div{
+    width: 100%;
+    height: 50%;
+position: relative;
+
+}
+
+.video iframe {
+    position: absolute;
+    width: 50%;
+    height: 25%;
+  
+}
+
+#article p{
+    width: 100%;
+    height: 100%;
+    float: none;
+    clear:both;
+    margin: 5% 2%;
+}
+
+      /* #menu.box {
   float: left;
   border: 1px;
   width: 50px;
@@ -426,27 +448,28 @@ opacity: 0.3;
 } */
 
 
-    .btn-gototop {
-        float: right;
-        margin-right: 30px;
-    }
+      .btn-gototop {
+          float: right;
+          margin-right: 30px;
+      }
 
-    .btn-gototop:before {
-        content: "\e915";
-        font-family: xeicon;
-        color: black;
-        font-size: 50px;
-        font-weight: bold;
-    }
+      .btn-gototop:before {
+          content: "\e915";
+          font-family: xeicon;
+          color: black;
+          font-size: 50px;
+          font-weight: bold;
+      }
 
-    footer {
-        padding: 5%;
-        }
-        footer div{
+      footer {
+          padding: 5%;
+      }
+
+      footer div {
           font-size: 15px;
-        }
-        
-    /* 
+      }
+
+      /* 
 #footer.box{
 background-color:black;
 color: black;
@@ -467,7 +490,7 @@ margin-right:40px;
   line-height: 30px;
 } */
 
-    /* down
+      /* down
 content: "\e905"; */
 
-}
+  }
