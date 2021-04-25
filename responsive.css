@@ -366,7 +366,7 @@
       }
 
       #hsmain div {
-          margin: 0 5%;
+          margin: 0 1%;
 
       }
 
@@ -393,9 +393,10 @@ opacity: 0.3;
       img {
           vertical-align: middle;
           clear: both;
-          margin-bottom: 10%;
+          margin-bottom: 20%;
           width: 150px;
           height: 150px;;
+          
       }
 
       .container h2 {
