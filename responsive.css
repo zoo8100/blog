@@ -263,8 +263,9 @@
         height: 150px;
         clear: both;
         margin-bottom: 300px;
-
+        
       }
+  
       /* Next & previous but*/
       .prev,
       .next {
@@ -373,12 +374,13 @@
       }
 
       #hsmain div {
-          margin: 0 5%;
+          margin: 0 0.5%;
 
       }
 
       #hsmain h1 {
           font-size: 30px;
+          margin: 0%;
       }
    
 
