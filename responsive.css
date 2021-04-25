@@ -259,10 +259,10 @@
       }
       .gimg{
         vertical-align: text-top;
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
         clear: both;
-        margin-bottom: 10%;
+        margin-bottom: 20%;
 
       }
       /* Next & previous but*/
@@ -362,7 +362,7 @@
           height: 10%;
           line-height: 1.5em;
           left: 0%;
-margin: 2%;
+
       }
 
 
